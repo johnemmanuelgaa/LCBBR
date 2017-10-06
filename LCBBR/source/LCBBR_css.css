@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+/* Body */
+body {
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+	height: 100%;
+	width: 100%;
+}
+header {
+	width: 100%;
+	height: 7%;
+	margin: auto;
+	position: fixed;
+	font-family: 'Josefin Sans', sans-serif;
+	z-index: 100;
+}
+.nav {
+	height: 5em;
+	-webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+	margin-right: 2.5em;
+}
+nav:hover {
+	background-color: #000000;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: left;
+	margin-right: 1.5625em;
+	letter-spacing: 0.125em;
+	font-weight: bold;
+	transition: all 0.3s linear;
+	margin-top: 1em;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #E7600E;
+}
+
+.parallaxback {
+	background: transparent;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pig {
+	content: url(../images/pig.png);
+	width: 4%;
+	float: left;
+	margin-top: 0.3125em;
+	margin-left: 3em;
+}
+.logo {
+	content: url(../images/logo.png);
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15.625em;
+	z-index: 1;
+
+}
+.arrow {
+	margin-top: 0px;
+	animation: bounce 1s infinite;
+	position:absolute;
+    top:100vh;
+    transform:translateY(90vh);
+
+
+}
+.about {
+	background-color: #FFFFFF;
+	height: 56.25em;
+	font-family: 'Lora', serif;
+	padding-top: 5em;
+}
+.aboutheading {
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	font-size: 50px;
+}
+.menu {
+	background: transparent;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 95vh;
+	font-family: 'Lora', serif;
+	padding-top: 3em;
+	position: relative;
+	text-align: center;
+}
+.menuheading {
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-bottom: 0em;
+}
+.textblock {
+	font-family: 'Raleway', sans-serif;
+	width: 60%;
+	text-align: center;
+	font-size: 22px;
+	line-height: 40px;
+	float: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #FFFFFF;
+	padding-bottom: 30px;
+}
+.beef {
+	width: 20%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.beefhead {
+	position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 2.1875em;
+	color: #FFFFFF;
+}
+.pork {
+	width: 20%;
+	display: inline-block;
+	margin-right: 1.875em;
+	margin-left: 1.875em;
+	position: relative;
+	text-align: center;
+}
+.porkhead {
+	position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 2.1875em;
+	color: #FFFFFF;
+}
+.chicken {
+	width: 20%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.chickenhead {
+	position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 2.1875em;
+	color: #FFFFFF;
+}
+.gallery {
+	background: violet;
+	height: 100em;
+}
+.contact {
+	height: 70vh;
+}
+
+/* Animations */
+@keyframes bounce {
+	0%{top: 0px;}
+	50%{top: 10px;}
+	100%{top: 0px;}
+}
+@media (max-width: 1560px){
+}
+
+@media (min-width: 480px){
+}
