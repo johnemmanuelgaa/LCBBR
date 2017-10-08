@@ -8,12 +8,10 @@
 <link href="source/LCBBR_css.css" rel="stylesheet" type="text/css">
 
 <!--Fonts links-->
-<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <!--jQuery links-->
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
@@ -62,6 +60,23 @@ $(document).ready(function(){
   })
 })
 	</script>
+<!--Google maps-->
+<script>
+    function initMap() {
+        var uluru = {lat: 14.28210, lng: 120.86616};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc51zmgVsCrH04TCEfG6rGINreFQnn21c&callback=initMap">
+</script>
 
 </head>
 	<header> <a href="">
@@ -72,9 +87,9 @@ $(document).ready(function(){
         		<li><a href="#parallaxback">HOME</a></li>
         		<li><a href="#story">OUR STORY</a></li>
         		<li><a href="#menu">MENU</a></li>
-        		<li><a href="#gallery">GALLERY</a></li>
+        		<li><a href="#location">LOCATION</a></li>
         		<li><a href="#contact">CONTACT</a></li>
-        		<li><a href="#locations">LOCATIONS</a></li>
+        		<li><a href="gallery.html">GALLERY</a></li>
         		<li><a href="#news">NEWS</a></li>
       		</ul>
 		</nav>
@@ -86,10 +101,10 @@ $(document).ready(function(){
 	</section>
 
 	<section class="about" id="story">
-		<h1 class="aboutheading">OUR STORY</h1>
+		<div class="aboutheading">OUR STORY</div>
 	</section>
 	<section class="menu" id="menu" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/woodback.jpg">
-		<h1 class="menuheading">MENU</h1>
+		<div class="menuheading">MENU</div>
 		<center>
 		<p class="textblock">We offer a wide variety of beef, pork, and chicken meals. Savor our mouthwatering and tender beef, and pork ribs that just melt in your mouth. Enjoy our perfectly grilled chicken cooked to perfection. We also offer pasta cooked al dente topped with our flavorful sauces. </p>
 			<a href="beefmenu"><div class="beef">
@@ -107,11 +122,17 @@ $(document).ready(function(){
 			</div></a>
 		</center>
 	</section>
-	<section class="gallery" id="gallery">
-
+	<section class="location" id="location">
+        <div class="locationheading">LOCATION</div>
+        <div id="map"></div>
+        <center class="address">
+            <div class="addresstext">2nd Flr Near SM Cinema</div>
+            <div class="addresstext">SM City Trece Martires, Governor's Drive cor. Capitol Road</div>
+            <div class="addresstext">Brgy. San Agustin, Trece Martires City, Cavite</div>
+        </center>
+        <button  onclick="window.location.href='branches.html'" class="addrlink">CHECK OTHER BRANCH LOCATIONS</button>
 	</section>
-	<section class="contact" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/wood.jpg">
-
+	<section class="contact" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/contact.jpg" id="contact">
 	</section>
 </body>
 </html>
