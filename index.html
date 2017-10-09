@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <!--jQuery links-->
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
@@ -79,6 +80,7 @@ $(document).ready(function(){
 </script>
 
 </head>
+    <!--Website Header-->
 	<header> <a href="">
     <h4 class="pig"></h4>
     </a>
@@ -95,6 +97,17 @@ $(document).ready(function(){
 		</nav>
 	</header>
 <body>
+    <!--Add Facebook Javascript SDK-->
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=316191228856541";
+                    fjs.parentNode.insertBefore(js, fjs);
+}               (document, 'script', 'facebook-jssdk'));
+        </script>
+    <!--Website Main Body-->
 	<section class="parallaxback" id="parallaxback" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/ribs.gif">
 		<div class="logo"></div>
 		<center><a href="#story" class="arrow"><img src="images/arrow.png" alt="" width="40" height="20"/></a></center>
@@ -110,7 +123,6 @@ $(document).ready(function(){
 			<a href="beefmenu"><div class="beef">
 				<h2 class="beefhead"><span>BEEF</span></h2>
 				<img src="images/beef.png" alt="" width="100%"/>
-
 			</div></a>
 			<a href="porkmenu"><div class="pork">
 				<h2 class="porkhead"><span>PORK</span></h2>
@@ -134,5 +146,30 @@ $(document).ready(function(){
 	</section>
 	<section class="contact" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/contact.jpg" id="contact">
 	</section>
+    <section class="footer">
+        <center>
+            <div class="sitemap">
+                <p style="font-size: 25px;">Sitemap</p>
+                <p><a href="#parallaxback" class="sitemapcontent">HOME</a></p>
+                <p><a href="#story" class="sitemapcontent">OUR STORY</a></p>
+                <p><a href="#menu" class="sitemapcontent">MENU</a></p>
+                <p><a href="#location" class="sitemapcontent">LOCATION</a></p>
+                <p><a href="#contact" class="sitemapcontent">CONTACT</a></p>
+                <p><a href="gallery.html" class="sitemapcontent">GALLERY</a></p>
+                <p><a href="#news" class="sitemapcontent">NEWS</a></p>
+            </div>
+            <div class="news">
+                <p style="font-size: 25px;">Latest News</p>
+            </div>
+            <div class="feed">
+                <p style="font-size: 25px;">Social Media Feed</p>
+            </div>
+            <div style="margin-top: 92px; display: inline-block; position: relative; float: left;" class="fb-like" data-href="https://www.facebook.com/LCBBRSMTreceMartires/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+            </div>
+        </center>
+            <div style="margin-right: 200px; float: right;"class="fb-page" data-href="https://www.facebook.com/LCBBRSMTreceMartires" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-width="450" data-height="430px"><blockquote cite="https://www.facebook.com/LCBBRSMTreceMartires" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LCBBRSMTreceMartires">Lady Christine&#039;s Baby Back Ribs - SM City Trece Martires</a></blockquote>
+            </div>
+
+    </section>
 </body>
 </html>
