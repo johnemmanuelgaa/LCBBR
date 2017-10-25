@@ -20,7 +20,27 @@ header {
 	font-family: 'Josefin Sans', sans-serif;
 	z-index: 100;
 }
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    z-index: 1000;
+}
 
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
 .sidenav {
     height: 50px;
     width: 0;
@@ -180,7 +200,7 @@ header {
     width: 100%;
 	height: 51em;
 	font-family: 'Lora', serif;
-	padding-top: 6.5em;
+	padding-top: 5.5em;
 }
 .aboutheading {
 	display: block;
@@ -197,7 +217,7 @@ header {
 	background-repeat: no-repeat;
 	height: 52em;
 	font-family: 'Lora', serif;
-	padding-top: 6.5em;
+	padding-top: 5.5em;
 	position: relative;
 	text-align: center;
 }
@@ -271,7 +291,7 @@ header {
     width: 100%;
     height: 52em;
     background-image: url(../images/topography.png);
-    padding-top: 6.5em;
+    padding-top: 5.5em;
 }
 .locationheading {
     display: block;
@@ -306,7 +326,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    background-color: #000000;
+    background-color: #393737;
     border: none;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -436,10 +456,12 @@ button:hover {
 .contactinfo {
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 400px;
+    position: relative;
     margin-top: 40px;
     float: left;
-    text-align: left;
+    text-align: center;
+    display: inline-block;
+    left: 15%;
 }
 
 .column1 {
@@ -447,10 +469,14 @@ button:hover {
     float: left;
     text-align: left;
     font-size: 18px;
+    width: 375;
+    margin-left: 10px;
 }
 
-.input {
-    height: 20px;
+.inputfirstname {
+    height: 25px;
+    width: 365px;
+    margin-top: 7px;
 }
 .contactinput {
     color: #FFFFFF;
@@ -458,8 +484,130 @@ button:hover {
     font-size: 25px;
     display: inline-block;
     margin-top: 40px;
-    margin-right: 200px;
     position: relative;
     text-align: center;
-    float: right;
+    float: left;
+    width: 750px;
+    left: 25%;
+}
+
+.column2 {
+    color: #FFFFFF;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 375;
+}
+
+.inputlastname {
+    height: 25px;
+    width: 365px;
+    margin-top: 7px;
+}
+
+.inputemail {
+    height: 25px;
+    width: 365px;
+    margin-top: 7px;
+}
+
+.message {
+    color: #FFFFFF;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 750px;
+    margin-left: 10px;
+}
+
+.messagebox {
+    margin-top: 7px;
+    width: 730px;
+}
+
+.input {
+    height: 25px;
+    width: 360px;
+    margin-top: 7px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 15px;
+    width: 355px;
+    text-align: right;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #393737;
+    color: #FFFFFF;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 355px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.branchselect {
+    display: inline-block;
+    color: #FFFFFF;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 7px;
+    font-style: normal;
+}
+
+.downarrow {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+i {
+   display: inline-block;
+    margin-left: 45px;
+    font-style: normal;
+}
+
+.send {
+    background-color: #393737;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 80px;
+    width: 200px;
+    text-align: center;
 }

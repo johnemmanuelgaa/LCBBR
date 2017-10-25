@@ -107,7 +107,28 @@ $(document).ready(function(){
 </script>
 <!--Contact form-->
 <script src="form.js"></script>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc51zmgVsCrH04TCEfG6rGINreFQnn21c&callback=initMap">
 </script>
@@ -184,35 +205,64 @@ $(document).ready(function(){
         <div class="locationheading">LOCATION</div>
         <div id="map"></div>
         <center class="address">
-            <div class="addresstext">2nd Flr Near SM Cinema</div>
+            <div class="addresstext">2nd Floor Near SM Cinema</div>
             <div class="addresstext">SM City Trece Martires, Governor's Drive cor. Capitol Road</div>
             <div class="addresstext">Brgy. San Agustin, Trece Martires City, Cavite</div>
         </center>
         <button  onclick="window.location.href='branches.html'" class="addrlink">CHECK OTHER BRANCH LOCATIONS</button>
 	</section>
 	<section class="contact" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/contact.jpg" id="contact">
-        <center>
             <div class="contactinfo">
                 <h1 style="font-size: 25px; color: #FFFFFF;">2ND FLR. SM CITY TRECE</h1>
-                <p style="font-size: 18px; text-align: center;">Trece City Martires, Cavite</p>
-                <p style="font-size: 18px; text-align: center;">4109</p>
+                <p style="font-size: 18px; text-align: center;">Trece City Martires, Cavite 4109</p>
                 <p style="font-size: 18px; text-align: center;">046-514-0486</p>
-                <p style="font-size: 18px; text-align: center;">046-514-0486</p>
+                <p style="font-size: 18px; text-align: center;">091-5440-4289</p>
+                <p style="font-size: 18px; text-align: center;">094-9870-9445</p>
                 <p style="font-size: 18px; text-align: center;">info@ladychristines.com</p>
                 <h1 style="font-size: 25px; color: #FFFFFF; text-align: center;">RESTAURANT HOURS</h1>
                 <p style="font-size: 18px; text-align: center;">Sunday - Saturday: 10am - 9pm</p>
+                <h1 style="font-size: 25px; color: #FFFFFF; text-align: center;">RESERVATIONS</h1>
+                <p style="font-size: 18px; text-align: center;">Reservations are valid for 2 hr stays</p>
+                <p style="font-size: 18px; text-align: center;">We can accommodate up to 90 persons</p>
             </div>
             <div class="contactinput">
                 <h1 style="font-size: 25px; color: #FFFFFF;">CONTACT US</h1>
                 <p style="font-size: 18px; text-align: center;"> Send us your message and we will get back to you as soon as possible </p>
                 <form role="form" method="post" id="reused_form">
                     <div class="column1">
-                    Name &#42;<br>
-                    <input class="input" type="text" name="firstname"><br>
+                    Name &#42;
+                    <br><input class="input" type="text" name="firstname"><br>
+                    <p style="margin-top: 5px; font-size: 14px;">First Name</p>
+                    Email Address &#42;
+                    <br><input class="input" type="text" name="email"><br>
+                    </div>
+                    <div class="column2">
+                    <br><input class="input" type="text" name="lastname"><br>
+                    <p style="margin-top: 5px; font-size: 14px;">Last Name</p>
+                    Phone Number &#42;
+                    <br><input class="input" type="text" name="email"><br>
+                    </div>
+                    <div class="message">
+                        Message &#42;
+                        <br>
+                        <textarea class="messagebox" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea><br>
+                    </div>
+                    <div class="column1">
+                    <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Select Branch to Send Message<i class="downarrow">&#10148;</i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column2">
+
+                    <button class="send">Submit</button>
                     </div>
                 </form>
             </div>
-        </center>
 	</section>
     <section class="footer">
         <center>
