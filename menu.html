@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lady Christine's Baby Back Ribs</title>
+<link href="css/index-style.css" rel="stylesheet" type="text/css">
+<link href="css/menu-style.css" rel="stylesheet" type="text/css">
+<!--Fonts links-->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--jQuery links-->
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script src="jQueryAssets/parallax.min.js"></script>
+
+<!--Hidden Navigation bar-->
+<script>
+    $(document).ready(function(){
+        $(".bar").css("background-color" , "black");
+    })
+    function openNav(checkbox) {
+        if (checkbox.checked) {
+            document.getElementById("mySidenav").style.width = "100vw";
+            document.getElementById("navback").style.width = "100vw";
+        }
+        else {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("navback").style.width = "0";
+        }
+    }
+</script>
+
+</head>
+    <!--Website Header-->
+	<header> <a href="../index.html">
+    <h4 class="pig"></h4>
+    </a>
+        <div class="nav-bar">
+            <input onclick="openNav(this)" type="checkbox" id="nav-button" />
+                <label for="nav-button" class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+        </div>
+        <nav id="navback" class="navback">
+        <div id="mySidenav" class="sidenav">
+            <a href="../index.html">HOME</a>
+            <a href="../story.html">OUR STORY</a>
+            <a href="../menu.html">MENU</a>
+            <a href="../locations.html">LOCATION</a>
+            <a href="../index.html#contact">CONTACT</a>
+            <a href="gallery1.html">GALLERY</a>
+            <a href="../news.html">NEWS</a>
+        </div>
+        </nav>
+	</header>
+<body>
+    <!--Add Facebook Javascript SDK-->
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=316191228856541";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+        </script>
+    <section class="menupage">
+
+        <div class="slideshow-container">
+            <center>
+            <div class="mySlides fade">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <img src="images/menu/1.jpg" style="height: 90vh; display:inline-block;">
+                <img src="images/menu/2.jpg" style="height: 90vh; display:inline-block;">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <img src="images/menu/2.jpg" style="height: 90vh">
+                <img src="images/menu/3.jpg" style="height: 90vh">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <img src="images/menu/4.jpg" style="height: 90vh">
+                <img src="images/menu/5.jpg" style="height: 90vh">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <img src="images/menu/6.jpg" style="height: 90vh">
+                <img src="images/menu/7.jpg" style="height: 90vh">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+
+            <div class="mySlides fade">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <img src="images/menu/8.jpg" style="height: 90vh">
+                <img src="images/menu/9.jpg" style="height: 90vh">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            </center>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+
+    </section>
+    <section class="footer">
+        <center>
+            <div class="sitemap">
+                <p style="font-size: 25px;">Sitemap</p>
+                <p><a href="index.html" class="sitemapcontent">HOME</a></p>
+                <p><a href="story.html" class="sitemapcontent">OUR STORY</a></p>
+                <p><a href="menu.html" class="sitemapcontent">MENU</a></p>
+                <p><a href="locations.html" class="sitemapcontent">LOCATION</a></p>
+                <p><a href="index.html#contact" class="sitemapcontent">CONTACT</a></p>
+                <p><a href="gallery/gallery1.html" class="sitemapcontent">GALLERY</a></p>
+                <p><a href="news.html" class="sitemapcontent">NEWS</a></p>
+            </div>
+            <div class="news">
+                <p style="font-size: 25px;">Latest News</p>
+            </div>
+            <div class="feed">
+                <p style="font-size: 25px;">Facebook Page</p>
+            </div>
+            <div style="margin-top: 92px; display: inline-block; position: relative; float: left;" class="fb-like" data-href="https://www.facebook.com/LCBBRSMTreceMartires/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+            </div>
+        </center>
+            <div style="margin-right: 200px; float: right;"class="fb-page" data-href="https://www.facebook.com/LCBBRSMTreceMartires" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-width="450" data-height="430px"><blockquote cite="https://www.facebook.com/LCBBRSMTreceMartires" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LCBBRSMTreceMartires">Lady Christine&#039;s Baby Back Ribs - SM City Trece Martires</a></blockquote>
+            </div>
+
+    </section>
+    <!--Carousel-->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

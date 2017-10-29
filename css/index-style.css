@@ -164,10 +164,11 @@ header {
 .parallaxback {
 	background: transparent;
 	background-position: center;
-	height: 56.25em;
+	height: 55em;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+    max-width:100%;
 }
 .pig {
 	content: url(../images/pig_noback.png);
@@ -202,12 +203,13 @@ header {
 	font-family: 'Lora', serif;
 	padding-top: 5.5em;
 }
-.aboutheading {
+.branchheading {
 	display: block;
 	text-align: center;
 	letter-spacing: 0.1em;
 	font-weight: bold;
 	font-size: 3.125em;
+    padding-bottom: 10px;
 }
 .menu {
 	background: transparent;
@@ -240,8 +242,8 @@ header {
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	color: #FFFFFF;
-    padding-top: 1.8em;
-	padding-bottom: 2.5em;
+
+
 }
 .beef {
 	width: 20%;
@@ -338,7 +340,7 @@ button:hover {
 }
 
 .contact {
-	height: 70vh;
+	height: 38em;
 }
 
 /* Animations */
@@ -638,4 +640,90 @@ i {
 	font-size: 1.5em;
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.menulink {
+    margin-top: 1.5em;
+    height: 2.7em;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: transparent;
+    border-style: solid;
+    border-width: medium;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    color: #FFFFFF;
+}
+
+
+
+.story {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5vw;
+    text-align: justify;
+    width: 40vw;
+    display: inline-block;
+    position: relative;
+    color: #393737;
+}
+
+.rock {
+    display: inline-block;
+    position: relative;
+}
+
+.aboutheading {
+    display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	font-size: 3.125em;
+    padding-bottom: 130px;
+}
+
+.storypagehead {
+    display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	font-size: 3.125em;
+    padding-bottom: 20px;
+}
+
+.storypage {
+    background-image: url(../images/contemporary.png);
+    width: 100%;
+    height: 60em;
+    font-family: 'Lora', serif;
+    padding-top: 4.5em;
+}
+
+.mission {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 130px;
+    font-size: 1.1vw;
+    text-align: justify;
+    width: 40vw;
+    display: inline-block;
+    position: relative;
+    color: #393737;
+    float: left;
+}
+
+.vision {
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-right: 130px;
+    font-size: 1.1vw;
+    text-align: justify;
+    width: 40vw;
+    display: inline-block;
+    position: relative;
+    color: #393737;
+    float: right;
 }

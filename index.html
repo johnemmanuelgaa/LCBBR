@@ -56,13 +56,13 @@ $(document).ready(function(){
             if (scroll > 860 && scroll < 1770 && clicked == 0) {
                 $(".bar").css("background-color" , "black");
             }
-            else if (scroll > 1771 && scroll < 2740 && clicked == 0) {
+            else if (scroll > 1771 && scroll < 2670 && clicked == 0) {
                 $(".bar").css("background-color" , "white");
             }
-            else if (scroll > 2740 && scroll < 3650 && clicked == 0) {
+            else if (scroll > 2671 && scroll < 3610 && clicked == 0) {
                 $(".bar").css("background-color" , "black");
             }
-            else if (scroll > 3200 && clicked == 0) {
+            else if (scroll > 3611 && clicked == 0) {
                 $(".bar").css("background-color" , "white");
             }
             else if (scroll < 860 && clicked == 0) {
@@ -149,10 +149,9 @@ window.onclick = function(event) {
         </div>
         <nav id="navback" class="navback">
         <div id="mySidenav" class="sidenav">
-            <a href="#parallaxback">HOME</a>
-            <a href="#story">OUR STORY</a>
-            <a href="#menu">MENU</a>
-            <a href="#location">LOCATION</a>
+            <a href="story.html">OUR STORY</a>
+            <a href="menu.html">MENU</a>
+            <a href="locations.html">LOCATION</a>
             <a href="#contact">CONTACT</a>
             <a href="gallery/gallery1.html">GALLERY</a>
             <a href="news.html">NEWS</a>
@@ -178,6 +177,17 @@ window.onclick = function(event) {
 
 	<section class="about" id="story">
 		<div class="aboutheading">OUR STORY</div>
+        <center>
+            <div class="story">
+
+                Lady Christine’s Baby Back Ribs is managed and owned by Dr. Joebert Gimeno, a food enthusiast.  Dr. Gimeno, fond of cooking and experimenting, came up with starting the business. The success of Lady Christine’s Baby Back Ribs started last 2011 from a take-out counter patronized by Class A and Class B food parishioners in their area. Increased patronage led to many franchise inquiries resulting to the opening of Lady Christine’s Baby Back Ribs outlets at various locations such as Lancaster Square Mall, SM City Lipa, SM City Dasmarinas, SM City Bacoor, SM City Calamba, SM City Molino, SM City Trece Martires, SM City Manila, and a soon to open branch in Fora, Tagaytay. Lady Christine’s Baby Back Ribs aspire to be the country’s leading food chain business that specializes on baby back ribs.
+
+            </div>
+            <div class="rock">
+                <img src="images/rock.jpg" alt="" width="690" height="460"/>
+            </div>
+        </center>
+
 	</section>
 	<section class="menu" id="menu" data-parallax="scroll" data-z-index="-1" speed="1.0" data-image-src="images/woodback.jpg">
 		<div class="menuheading">MENU</div>
@@ -199,6 +209,7 @@ window.onclick = function(event) {
 				<h2 class="chickenhead"><span>FISH</span></h2>
 				<img src="images/fish.png" alt="" width="100%"/>
 			</div></a>
+            <button  onclick="window.location.href='menu.html'" class="menulink">SEE OUR FULL MENU</button>
 		</center>
 	</section>
 	<section class="location" id="location">
@@ -269,9 +280,9 @@ window.onclick = function(event) {
             <div class="sitemap">
                 <p style="font-size: 25px;">Sitemap</p>
                 <p><a href="#parallaxback" class="sitemapcontent">HOME</a></p>
-                <p><a href="#story" class="sitemapcontent">OUR STORY</a></p>
-                <p><a href="#menu" class="sitemapcontent">MENU</a></p>
-                <p><a href="#location" class="sitemapcontent">LOCATION</a></p>
+                <p><a href="story.html" class="sitemapcontent">OUR STORY</a></p>
+                <p><a href="menu.html" class="sitemapcontent">MENU</a></p>
+                <p><a href="locations.html" class="sitemapcontent">LOCATION</a></p>
                 <p><a href="#contact" class="sitemapcontent">CONTACT</a></p>
                 <p><a href="gallery/gallery1.html" class="sitemapcontent">GALLERY</a></p>
                 <p><a href="news.html" class="sitemapcontent">NEWS</a></p>
